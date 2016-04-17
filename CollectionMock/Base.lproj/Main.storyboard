@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CollectionMock" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jlg-0U-GID">
+                                <rect key="frame" x="784" y="20" width="240" height="748"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="HUW-HG-B5t"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tmD-yT-ekB">
+                                <rect key="frame" x="0.0" y="20" width="784" height="748"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mmC-Mw-w5a">
+                                        <rect key="frame" x="0.0" y="0.0" width="784" height="748"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QFV-kq-hiY">
+                                                <rect key="frame" x="0.0" y="0.0" width="784" height="748"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GHI-4v-2g5">
+                                                        <rect key="frame" x="329" y="301" width="100" height="100"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HTC-53-Hgd">
+                                                        <rect key="frame" x="184" y="128" width="100" height="100"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZSi-Ya-Dix">
+                                                        <rect key="frame" x="100" y="400" width="100" height="100"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <gestureRecognizers/>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="y7p-2X-O3n" appends="YES" id="AGt-Mb-teV"/>
+                                                        </connections>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.75167410714285721" green="0.75167410714285721" blue="0.75167410714285721" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="QFV-kq-hiY" firstAttribute="centerY" secondItem="mmC-Mw-w5a" secondAttribute="centerY" id="7hd-G4-Xax"/>
+                                            <constraint firstAttribute="trailing" secondItem="QFV-kq-hiY" secondAttribute="trailing" id="XDr-HS-anI"/>
+                                            <constraint firstAttribute="bottom" secondItem="QFV-kq-hiY" secondAttribute="bottom" id="fBw-mL-mTr"/>
+                                            <constraint firstItem="QFV-kq-hiY" firstAttribute="top" secondItem="mmC-Mw-w5a" secondAttribute="top" id="iTR-di-i9t"/>
+                                            <constraint firstItem="QFV-kq-hiY" firstAttribute="centerX" secondItem="mmC-Mw-w5a" secondAttribute="centerX" id="icP-zr-s7i"/>
+                                            <constraint firstItem="QFV-kq-hiY" firstAttribute="leading" secondItem="mmC-Mw-w5a" secondAttribute="leading" id="rFU-ct-6zY"/>
+                                        </constraints>
+                                    </scrollView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MJa-ej-OCS">
+                                        <rect key="frame" x="0.0" y="0.0" width="784" height="748"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Txa-iL-YVL">
+                                                <rect key="frame" x="221" y="347" width="240" height="128"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NyG-5v-kp5">
+                                                        <rect key="frame" x="203" y="0.0" width="30" height="30"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.8582589285714286" green="0.8582589285714286" blue="0.8582589285714286" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="MJa-ej-OCS" firstAttribute="leading" secondItem="tmD-yT-ekB" secondAttribute="leading" id="0F9-Vs-ht8"/>
+                                    <constraint firstAttribute="trailing" secondItem="MJa-ej-OCS" secondAttribute="trailing" id="AxH-HO-xU3"/>
+                                    <constraint firstItem="mmC-Mw-w5a" firstAttribute="leading" secondItem="tmD-yT-ekB" secondAttribute="leading" id="PTt-j3-zKw"/>
+                                    <constraint firstItem="MJa-ej-OCS" firstAttribute="top" secondItem="tmD-yT-ekB" secondAttribute="top" id="S6O-68-M4G"/>
+                                    <constraint firstAttribute="bottom" secondItem="MJa-ej-OCS" secondAttribute="bottom" id="VaL-cD-PO4"/>
+                                    <constraint firstItem="mmC-Mw-w5a" firstAttribute="top" secondItem="tmD-yT-ekB" secondAttribute="top" id="jml-eU-cBN"/>
+                                    <constraint firstAttribute="trailing" secondItem="mmC-Mw-w5a" secondAttribute="trailing" id="oov-4q-3Nb"/>
+                                    <constraint firstAttribute="bottom" secondItem="mmC-Mw-w5a" secondAttribute="bottom" id="vUg-8z-dES"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jlg-0U-GID" firstAttribute="leading" secondItem="tmD-yT-ekB" secondAttribute="trailing" id="1Y9-dT-XSm"/>
+                            <constraint firstItem="tmD-yT-ekB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="FIQ-gz-XZS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tmD-yT-ekB" secondAttribute="bottom" id="Gfl-LN-U71"/>
+                            <constraint firstItem="tmD-yT-ekB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SM1-Fm-3xZ"/>
+                            <constraint firstAttribute="trailing" secondItem="jlg-0U-GID" secondAttribute="trailing" id="aZx-Dz-Zeh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jlg-0U-GID" secondAttribute="bottom" id="fv6-72-u0F"/>
+                            <constraint firstItem="jlg-0U-GID" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="xKl-EG-bmF"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1024" height="768"/>
+                    <connections>
+                        <outlet property="firstView" destination="ZSi-Ya-Dix" id="sCc-Qe-HCy"/>
+                        <outlet property="rotationFrameView" destination="Txa-iL-YVL" id="nFG-78-n3y"/>
+                        <outlet property="rotationPanView" destination="NyG-5v-kp5" id="l2P-Kn-dZV"/>
+                        <outlet property="rotationView" destination="MJa-ej-OCS" id="daj-LZ-agY"/>
+                        <outlet property="scrollView" destination="QFV-kq-hiY" id="aQS-X5-6Vj"/>
+                        <outlet property="tapGesture" destination="y7p-2X-O3n" id="Dkg-ae-XEE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="y7p-2X-O3n">
+                    <connections>
+                        <action selector="didTapFirstView:" destination="BYZ-38-t0r" id="Zhf-GH-ydJ"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="233" y="137"/>
+        </scene>
+    </scenes>
+</document>

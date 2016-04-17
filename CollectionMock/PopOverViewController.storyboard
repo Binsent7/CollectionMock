@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8Wr-l6-Lh4">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Pop Over View Controller-->
+        <scene sceneID="nGS-mX-dEr">
+            <objects>
+                <viewController storyboardIdentifier="tapView" id="8Wr-l6-Lh4" customClass="PopOverViewController" customModule="CollectionMock" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k3s-XR-qsm"/>
+                        <viewControllerLayoutGuide type="bottom" id="6xj-s9-Njc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" id="TSg-9U-jay">
+                        <rect key="frame" x="0.0" y="0.0" width="262" height="50"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TEX-Ub-YPB">
+                                <rect key="frame" x="8" y="8" width="90" height="34"/>
+                                <state key="normal" title="テーブル変更"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jan-cN-mJV">
+                                <rect key="frame" x="106" y="8" width="30" height="34"/>
+                                <state key="normal" title="回転"/>
+                                <connections>
+                                    <action selector="didTapRotationButton:" destination="8Wr-l6-Lh4" eventType="touchUpInside" id="Q06-3G-3qb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HN2-XW-4o6">
+                                <rect key="frame" x="144" y="8" width="110" height="34"/>
+                                <state key="normal" title="レイアウト削除"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HN2-XW-4o6" firstAttribute="leading" secondItem="Jan-cN-mJV" secondAttribute="trailing" constant="8" id="5Bn-kH-ubo"/>
+                            <constraint firstItem="TEX-Ub-YPB" firstAttribute="top" secondItem="k3s-XR-qsm" secondAttribute="bottom" constant="8" id="Gjh-Oa-j3Q"/>
+                            <constraint firstItem="6xj-s9-Njc" firstAttribute="top" secondItem="TEX-Ub-YPB" secondAttribute="bottom" constant="8" id="Jfl-7w-OA8"/>
+                            <constraint firstAttribute="trailing" secondItem="HN2-XW-4o6" secondAttribute="trailing" constant="8" id="MlZ-Cw-izi"/>
+                            <constraint firstItem="TEX-Ub-YPB" firstAttribute="leading" secondItem="TSg-9U-jay" secondAttribute="leading" constant="8" id="OIO-Gd-DDT"/>
+                            <constraint firstItem="Jan-cN-mJV" firstAttribute="leading" secondItem="TEX-Ub-YPB" secondAttribute="trailing" constant="8" id="Tto-6V-nve"/>
+                            <constraint firstItem="6xj-s9-Njc" firstAttribute="top" secondItem="HN2-XW-4o6" secondAttribute="bottom" constant="8" id="nV4-wO-Obc"/>
+                            <constraint firstItem="HN2-XW-4o6" firstAttribute="top" secondItem="k3s-XR-qsm" secondAttribute="bottom" constant="8" id="o0x-Ht-teW"/>
+                            <constraint firstItem="6xj-s9-Njc" firstAttribute="top" secondItem="Jan-cN-mJV" secondAttribute="bottom" constant="8" id="ofA-iD-9U8"/>
+                            <constraint firstItem="Jan-cN-mJV" firstAttribute="top" secondItem="k3s-XR-qsm" secondAttribute="bottom" constant="8" id="vBg-TN-bwk"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="262" height="50"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VGQ-5P-kHr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="233" y="694"/>
+        </scene>
+    </scenes>
+</document>
